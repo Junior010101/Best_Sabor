@@ -1,0 +1,54 @@
+html{
+    overflow-x: hidden;
+}
+div.infocube {
+    width: 200px;
+    height: 320px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-image: url(https://cdn0.tudoreceitas.com/pt/posts/1/9/1/coxinha_simples_191_600.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 10px solid #2a2a4d46;
+    padding: 10px 10px 10px 10px;
+}
+p.borrado {
+    background-color: #c4c4c496;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+h4.borrado {
+    background-color: #c4c4c496;
+    border-radius: 10px;
+    padding: 2px 2px 2px 2px;
+}
+a.pretu {
+    color: black;
+}
+img.caco {
+    width: 200px;
+    height: 130px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.tag-list{
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+}
+.tag-list li {
+    padding: 1rem;
+    background: var(--clr-primary-400);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-400);
+}
+.scroller {
+    margin-left: 8px;
+    max-width: 63%;
+    overflow: hidden;
+}
+.scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    gap: 1rem;
+}

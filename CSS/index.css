@@ -46,6 +46,7 @@ img.caco {
     margin-left: 8px;
     max-width: 63%;
     border: 1px solid red;
+    text-align: end;
 }
 .scroller__inner {
     padding-block: 1rem;

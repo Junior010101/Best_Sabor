@@ -53,3 +53,6 @@ img.caco {
     display: flex;
     gap: 1rem;
 }
+ul.tag-list {
+    margin-left: -25px;
+}

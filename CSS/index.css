@@ -45,7 +45,7 @@ img.caco {
 .scroller {
     margin-left: 8px;
     max-width: 63%;
-    overflow: hidden;
+    position: relative;
 }
 .scroller__inner {
     padding-block: 1rem;

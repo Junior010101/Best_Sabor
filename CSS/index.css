@@ -5,8 +5,9 @@ html{
 }
 video.video__fundo {
     z-index: -100;
-    width: 99.5vmax;
+    width: 100%;
     position: absolute;
+    display: grid;
 }
 div#body1{
     display: flex;
@@ -15,7 +16,7 @@ div#body1{
 }
 div.space01 {
     background-color: white;
-    height: 60%;
+    height: 80%;
 }
 /*Caixas de informação*/
 div.infocube {
@@ -62,7 +63,7 @@ img.caco {
 }
 .scroller {
     overflow-x: auto;
-    max-width: 100%;
+    width: 100%;
     position: absolute;
     z-index: 1;
 }

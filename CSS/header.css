@@ -59,7 +59,7 @@ h1.logobs {
 input.search{
     height: 38px;
     width: 600px;
-    margin-left: 270px;
+    margin-left: auto;
     margin-top: 30px;
     border: none;
     padding-left: 5px;
@@ -79,9 +79,10 @@ button.subbutton{
     margin-top: 30px;
     height: 40px;
     width: 80px;
+    margin-right: 200px;
 }
 div#navbar{
-    background-color: rgba(42, 42, 77, 0.486);
+    background-color: rgba(42, 42, 77, 0.726);
     height: 40px;
     display: flex;
     border-bottom: 12px solid #c4c4c4;
@@ -116,5 +117,6 @@ div.config{
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-left: 710px;
+    margin-left: auto;
+    margin-right: 35px;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./CSS/index.css"><!--CSS do Index-->
     <link rel="stylesheet" href="./CSS/header.css"><!--CSS do Cabeçãlho-->
     <script src="./JS/searchbar.js"></script><!--Script da Barra de Pesquisa-->
+    <script src="./JS/Scroller.js"></script><!--Script do Carrocéu de Imagens-->
     <link rel="shortcut icon" href="./IMG/BS-Logo(1).ico"><!--Icone do Site-->
 </head>
 <body><!--Inicio do Site-->
@@ -30,6 +31,9 @@
         <!--------------------->
         </nav>
     </header>
+    <div class="backgroundvid"><!--Video de Fundo-->
+      <video class="video__fundo" src="./VID/FundoV1.mp4" autoplay loop muted></video>
+    </div>
     <!--Inicio da Barra de Navegação-->
     <div id="navbar">
         <h4 class="left">Sanduiches</h4>
@@ -55,80 +59,214 @@
     </div>
     <!--Fim da Barra de Navegação-->
 <!--Final do Cabeçãlho-->
-<!--Carrocéu de Ofertas-->
-     <div class="scroller">
-        <ul class="tag-list scroller__inner">
-            <li>
-                <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
-                    <div class="infocube">
-                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                      <h4 class="borrado">Nome da Comida</h4>
-                      <p class="borrado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula, ante a lacinia bibendum, elit enim cursus nibh,
-                        et finibus ex dui et nibh.</p>
-                    </div>
-                  </a> 
-            </li>
-            <li>
-                <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
-                    <div class="infocube">
-                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                      <h4 class="borrado">Nome da Comida</h4>
-                      <p class="borrado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula, ante a lacinia bibendum, elit enim cursus nibh,
-                         et finibus ex dui et nibh.</p>
-                    </div>
-                  </a> 
-            </li>
-            <li>
-                <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
-                    <div class="infocube">
-                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                      <h4 class="borrado">Nome da Comida</h4>
-                      <p class="borrado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula, ante a lacinia bibendum, elit enim cursus nibh,
-                        et finibus ex dui et nibh.</p>
-                    </div>
-                  </a> 
-            </li>
-            <li>
-                <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
-                    <div class="infocube">
-                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                      <h4 class="borrado">Nome da Comida</h4>
-                      <p class="borrado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula, ante a lacinia bibendum, elit enim cursus nibh,
-                        et finibus ex dui et nibh.</p>
-                    </div>
-                  </a> 
-            </li>
-            <li>
-                <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
-                    <div class="infocube">
-                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                      <h4 class="borrado">Nome da Comida</h4>
-                      <p class="borrado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula, ante a lacinia bibendum, elit enim cursus nibh,
-                        et finibus ex dui et nibh.</p>
-                    </div>
-                  </a> 
-            </li>
-            <li>
-                <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
-                    <div class="infocube">
-                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                      <h4 class="borrado">Nome da Comida</h4>
-                      <p class="borrado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula, ante a lacinia bibendum, elit enim cursus nibh,
-                        et finibus ex dui et nibh.</p>
-                    </div>
-                  </a> 
-            </li>
-            <li>
-                <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
-                    <div class="infocube">
-                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                      <h4 class="borrado">Nome da Comida</h4>
-                      <p class="borrado">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula, ante a lacinia bibendum, elit enim cursus nibh,
-                        et finibus ex dui et nibh.</p>
-                    </div>
-                  </a> 
-            </li>
-        </ul>
+  <!--Carrocéu de Ofertas-->
+  <div id="body1">
+    <div class="scroller" data-animated="true">
+      <ul class="tag-list scroller__inner">
+        <li>
+              <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+                  <div class="infocube">
+                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                    <h4 class="borrado">Nome da Comida</h4>
+                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                       consectetur adipiscing elit.<br>
+                        Nam vehicula, ante a lacinia<br>
+                         bibendum, elit enim cursus 
+                         <br>nibh et finibus ex dui et nibh.</p>
+                  </div>
+                </a> 
+        </li>
+        <li>
+              <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+                  <div class="infocube">
+                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                    <h4 class="borrado">Nome da Comida</h4>
+                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                      consectetur adipiscing elit.<br>
+                       Nam vehicula, ante a lacinia<br>
+                        bibendum, elit enim cursus 
+                        <br>nibh et finibus ex dui et nibh.</p>
+                  </div>
+                </a> 
+        </li>
+        <li>
+              <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+                  <div class="infocube">
+                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                    <h4 class="borrado">Nome da Comida</h4>
+                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                      consectetur adipiscing elit.<br>
+                       Nam vehicula, ante a lacinia<br>
+                        bibendum, elit enim cursus 
+                        <br>nibh et finibus ex dui et nibh.</p>
+                  </div>
+                </a> 
+        </li>
+        <li>
+              <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+                  <div class="infocube">
+                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                    <h4 class="borrado">Nome da Comida</h4>
+                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                      consectetur adipiscing elit.<br>
+                       Nam vehicula, ante a lacinia<br>
+                        bibendum, elit enim cursus 
+                        <br>nibh et finibus ex dui et nibh.</p>
+                  </div>
+                </a> 
+        </li>
+        <li>
+              <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+                  <div class="infocube">
+                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                    <h4 class="borrado">Nome da Comida</h4>
+                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                      consectetur adipiscing elit.<br>
+                       Nam vehicula, ante a lacinia<br>
+                        bibendum, elit enim cursus 
+                        <br>nibh et finibus ex dui et nibh.</p>
+                  </div>
+                </a> 
+        </li>
+        <li>
+              <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+                  <div class="infocube">
+                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                    <h4 class="borrado">Nome da Comida</h4>
+                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                      consectetur adipiscing elit.<br>
+                       Nam vehicula, ante a lacinia<br>
+                        bibendum, elit enim cursus 
+                        <br>nibh et finibus ex dui et nibh.</p>
+                  </div>
+                </a> 
+        </li>
+        <li>
+              <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+                  <div class="infocube">
+                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                    <h4 class="borrado">Nome da Comida</h4>
+                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                      consectetur adipiscing elit.<br>
+                       Nam vehicula, ante a lacinia<br>
+                        bibendum, elit enim cursus 
+                        <br>nibh et finibus ex dui et nibh.</p>
+                  </div>
+                </a> 
+        </li>
+        <li>
+          <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+              <div class="infocube">
+                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                <h4 class="borrado">Nome da Comida</h4>
+                <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                   consectetur adipiscing elit.<br>
+                    Nam vehicula, ante a lacinia<br>
+                     bibendum, elit enim cursus 
+                     <br>nibh et finibus ex dui et nibh.</p>
+              </div>
+            </a> 
+      </li>
+      <li>
+          <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+              <div class="infocube">
+                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                <h4 class="borrado">Nome da Comida</h4>
+                <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                  consectetur adipiscing elit.<br>
+                   Nam vehicula, ante a lacinia<br>
+                    bibendum, elit enim cursus 
+                    <br>nibh et finibus ex dui et nibh.</p>
+              </div>
+            </a> 
+      </li>
+      <li>
+          <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+              <div class="infocube">
+                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                <h4 class="borrado">Nome da Comida</h4>
+                <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                  consectetur adipiscing elit.<br>
+                   Nam vehicula, ante a lacinia<br>
+                    bibendum, elit enim cursus 
+                    <br>nibh et finibus ex dui et nibh.</p>
+              </div>
+            </a> 
+      </li>
+      <li>
+          <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+              <div class="infocube">
+                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                <h4 class="borrado">Nome da Comida</h4>
+                <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                  consectetur adipiscing elit.<br>
+                   Nam vehicula, ante a lacinia<br>
+                    bibendum, elit enim cursus 
+                    <br>nibh et finibus ex dui et nibh.</p>
+              </div>
+            </a> 
+      </li>
+      <li>
+          <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+              <div class="infocube">
+                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                <h4 class="borrado">Nome da Comida</h4>
+                <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                  consectetur adipiscing elit.<br>
+                   Nam vehicula, ante a lacinia<br>
+                    bibendum, elit enim cursus 
+                    <br>nibh et finibus ex dui et nibh.</p>
+              </div>
+            </a> 
+      </li>
+      <li>
+          <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+              <div class="infocube">
+                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                <h4 class="borrado">Nome da Comida</h4>
+                <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                  consectetur adipiscing elit.<br>
+                   Nam vehicula, ante a lacinia<br>
+                    bibendum, elit enim cursus 
+                    <br>nibh et finibus ex dui et nibh.</p>
+              </div>
+            </a> 
+      </li>
+      <li>
+          <a id="conserto" class="pretu" href="HTML/sub1-Boxe.html">
+              <div class="infocube">
+                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                <h4 class="borrado">Nome da Comida</h4>
+                <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                  consectetur adipiscing elit.<br>
+                   Nam vehicula, ante a lacinia<br>
+                    bibendum, elit enim cursus 
+                    <br>nibh et finibus ex dui et nibh.</p>
+              </div>
+            </a> 
+      </li>
+      </ul>
+   </div>
+   </div>
+  <!--Fim do Carrocéu-->
+   <div class="space01">
+       <!--Slide de Descontos-->
+    <div id="slider">
+      <div class="slides">
+        <!--Radio Buttons-->
+        <input type="radio" name="radio-button" id="radio1">
+        <input type="radio" name="radio-button" id="radio2">
+        <input type="radio" name="radio-button" id="radio3">
+        <input type="radio" name="radio-button" id="radio4">
+        <!--End of Radio Buttons-->
+        <!--Slides-->
+        <div class="slide1">
+          <img src="" class="im">
+        </div>
+      </div>
      </div>
+   </div>
+
+
 </body>
 </html>

@@ -1,21 +1,37 @@
+/*Pagina*/
 html{
-    overflow-x: hidden;
+    max-width: 100%;
+    max-height: 100%;
 }
+video.video__fundo {
+    z-index: -100;
+    width: 99.5vmax;
+    position: absolute;
+}
+div#body1{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 420px;
+}
+div.space01 {
+    background-color: white;
+    height: 60%;
+}
+/*Caixas de informação*/
 div.infocube {
     width: 200px;
     height: 320px;
-    margin-left: 10px;
     border-radius: 10px;
     background-image: url(https://cdn0.tudoreceitas.com/pt/posts/1/9/1/coxinha_simples_191_600.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 10px solid #2a2a4d46;
-    padding: 10px 10px 10px 10px;
 }
 p.borrado {
     background-color: #c4c4c496;
     border-radius: 10px;
     padding: 5px 5px 5px 5px;
+    height: 100px;
 }
 h4.borrado {
     background-color: #c4c4c496;
@@ -31,6 +47,8 @@ img.caco {
     border-radius: 10px;
     border: 1px solid black;
 }
+/*End of Infocube*/
+/*Inicio Animação de Scroll - Horizontal*/
 .tag-list{
     margin: 0;
     padding-inline: 0;
@@ -43,12 +61,38 @@ img.caco {
     box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-400);
 }
 .scroller {
-    margin-left: 8px;
-    max-width: 63%;
-    overflow: hidden;
+    overflow-x: auto;
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 .scroller__inner {
     padding-block: 1rem;
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
 }
+.scroller[data-animated="true"] {
+    overflow: scroll;
+    mask: linear-gradient(90deg, rgba(0, 0, 0, 0.342), white 20%, white 80%, rgba(0, 0, 0, 0.342));
+}
+.scroller[data-animated="true"] .scroller__inner {
+    flex-wrap: nowrap;
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+    to {
+        transform: translate(calc(-137% - 0.5rem));
+    }
+}
+.scroller[data-animated="true"] .scroller__inner:hover {
+    animation-play-state: paused;
+}
+.scroller[data-animated="true"]::-webkit-scrollbar {
+    display: none;
+}
+div.scroller {
+    border-bottom: 12px solid #c4c4c4;
+}
+/*End of Scroller*/
+/*Inicio do Slider*/

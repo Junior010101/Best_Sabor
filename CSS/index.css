@@ -8,6 +8,7 @@ video.video__fundo {
     width: 100%;
     position: absolute;
     display: grid;
+    opacity: 0.5;
 }
 div#body1{
     display: flex;

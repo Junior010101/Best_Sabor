@@ -1,0 +1,154 @@
+/*Inicio Header*/
+html{
+    display: grid;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: #2a2a4d;
+}
+nav{
+    display: flex;
+}
+a {
+    text-decoration: none;
+    user-select: none;
+}
+a#redirect{
+    display: flex;
+    margin-left: 40px;
+}
+div.flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+img.logo{
+    width: 100px;
+    height: 100px;
+}
+h1.hd {
+    color: white;
+    height: 25px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1.sabor {
+    margin-top: -20px;
+    margin-left: 10px;
+}
+strong.B {
+    color: #4747d4;
+    font-family: cursive;
+}
+strong.S {
+    color: #ff7622;
+    font-family: cursive;
+}
+h1.logobs {
+    font-size: 20px;
+}
+input.search{
+    height: 38px;
+    width: 600px;
+    margin-left: auto;
+    margin-top: 30px;
+    border: none;
+    padding-left: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+}
+input.search::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button.subbutton{
+    background-color: #ff7622;
+    background-image: url(../IMG/ico_pesquisa.png);
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    margin-top: 30px;
+    height: 40px;
+    width: 80px;
+    margin-right: 200px;
+}
+div#navbar{
+    background-color: rgba(42, 42, 77, 0.726);
+    height: 40px;
+    display: flex;
+    border-bottom: 12px solid #c4c4c4;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+div.triangulo{
+    height: 0px;
+    width: 0px;
+    margin-left: 5px;
+    margin-top: 16px;
+    border-top: 11px solid white;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    user-select: none;
+}
+br{
+    user-select: none;
+}
+::placeholder {
+    user-select: none;
+}
+h4.left{
+    user-select: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+}
+div.config{
+    height: 40px;
+    width: 40px;
+    background-image: url(../IMG/Config_ico.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.pesquisa {
+    height: 40px;
+    width: 40px;
+    background-image: url(../IMG/Lupa__ico-pesquisa.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    visibility: hidden;
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 42% cover 100%;
+}
+#comp {
+    display: flex;
+    margin-left: auto;
+    margin-right: 25px;
+}
+@keyframes appear {
+    from {
+       visibility: hidden;
+    }
+    to {
+       visibility: visible;
+    }
+}
+div.pesquisa:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+.dropdown1:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+div.dropdown1 {
+    display: flex;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}

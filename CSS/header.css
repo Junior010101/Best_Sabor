@@ -1,10 +1,4 @@
-::-webkit-scrollbar{
-    width: 5px;
-    background-color: white;
-}
-::-webkit-scrollbar-thumb{
-    background-color: rgba(0, 0, 0, 0.349);
-}
+/*Inicio Header*/
 html{
     display: grid;
 }
@@ -35,7 +29,7 @@ img.logo{
     width: 100px;
     height: 100px;
 }
-h1 {
+h1.hd {
     color: white;
     height: 25px;
     display: flex;
@@ -131,7 +125,7 @@ div.pesquisa {
     visibility: hidden;
     animation: appear 1ms ease-in-out;
     animation-timeline: view();
-    animation-range: cover 70% cover 100%;
+    animation-range: cover 42% cover 100%;
 }
 #comp {
     display: flex;
@@ -143,7 +137,7 @@ div.pesquisa {
        visibility: hidden;
     }
     to {
-        visibility: visible;
+       visibility: visible;
     }
 }
 div.pesquisa:hover {

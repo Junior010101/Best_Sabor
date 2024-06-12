@@ -2,23 +2,34 @@
 html{
     max-width: 100%;
     max-height: 100%;
+    background-color: whitesmoke;
 }
 video.video__fundo {
     z-index: -100;
-    width: 100%;
+    width: 90.5%;
+    margin-left: 55px;
     position: absolute;
     display: grid;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 div#body1{
     display: flex;
-    flex-direction: column-reverse;
     margin-top: 420px;
+    flex-direction: column-reverse;
 }
 div.space01 {
     background-color: white;
-    height: 80%;
+    height: 30%;
+    padding-top: 40px;
 }
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.349);
+}
+ /*--------------------*/
 /*Caixas de informação*/
 div.infocube {
     width: 200px;
@@ -64,12 +75,13 @@ img.caco {
 }
 .scroller {
     overflow-x: auto;
-    width: 100%;
+    width: 90.5%;
+    margin-left: 55px;
     position: absolute;
     z-index: 1;
 }
 .scroller__inner {
-    padding-block: 1rem;
+    padding-block: 0.1.5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
@@ -98,3 +110,133 @@ div.scroller {
 }
 /*End of Scroller*/
 /*Inicio do Slider*/
+#slider{
+    border: 3px solid #0b0b3f;
+    margin-top: 40px;
+    margin-left: 55px;
+    width: 90%;
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.Slide{
+    width: 25%;
+    position: relative;
+
+}
+.Slide img{
+    width: 100%;
+    height: 450px;
+}
+.manual-nav{
+    position: absolute;
+    width: 89.4%;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+.Manual-btn{
+    border: 2px solid rgb(43, 43, 43);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.Manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.Manual-btn:hover{
+    background-color: rgb(43, 43, 43);
+}
+#radio1:checked ~ .Primeiro{
+    margin-left: 0;
+}
+#radio2:checked ~ .Primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .Primeiro{
+    margin-left: -50%;
+}
+#radio4:checked ~ .Primeiro{
+    margin-left: -75%;
+}
+div.navega div{
+    border: 2px solid skyblue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navega{
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 38%;
+    display: flex;
+    justify-content: center;
+}
+.navega div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navega .auto-btn1{
+    background-color: gray;
+}
+#radio2:checked ~ .navega .auto-btn2{
+    background-color: grey;
+}
+#radio3:checked ~ .navega .auto-btn3{
+    background-color: gray;
+}
+#radio4:checked ~ .navega .auto-btn4{
+    background-color: gray;
+}
+div.control{
+    border: 2px solid skyblue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.control-left:checked ~ .Primeiro{
+    margin-left: -25%;
+}
+/*End of Slider*/
+/*Inicio oferta 1*/
+.burgueroff{
+    width: 200px;
+    height: 400px;
+    background-color: #0b0b3f;
+    background-image: url(../IMG/Burquer_proBS.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.info_burguer{
+    height: 398px;
+    width: 795px;
+    border: 1px solid #0b0b3f;
+}
+#off {
+    display: flex;
+    margin-left: 55px;
+}
+.nna {
+    margin-left: 30px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.par{
+    margin-left: 30px;
+}
+footer{
+    background-color: #2a2a4d;
+    margin-top: 40px;
+    height: 40px;
+}

@@ -6,8 +6,8 @@
     <title>Best Sabor - Inicio</title><!--Titulo do Site-->
     <link rel="stylesheet" href="./CSS/index.css"><!--CSS do Index-->
     <link rel="stylesheet" href="./CSS/header.css"><!--CSS do Cabeçãlho-->
-    <script src="./JS/searchbar.js"></script><!--Script da Barra de Pesquisa-->
-    <script src="./JS/Scroller.js"></script><!--Script do Carrocéu de Imagens-->
+    <script async src="./JS/searchbar.js"></script><!--Script da Barra de Pesquisa-->
+    <script async src="./JS/slider.js"></script><!--Script dos Slides-->
     <link rel="shortcut icon" href="./IMG/BS-Logo(1).ico"><!--Icone do Site-->
 </head>
 <body><!--Inicio do Site-->
@@ -17,8 +17,8 @@
             <a id="redirect" href="./index.html">
                 <img class="logo" src="./IMG/Logo1.png">
                 <div class="flex">
-                    <h1>Best</h1>
-                    <h1 class="sabor"> Sabor</h1>
+                    <h1 class="hd">Best</h1>
+                    <h1 class="sabor hd"> Sabor</h1>
                 </div>
                 <h1 class="logobs"><strong class="B">B</strong>
                     <strong class="S">S</strong></h1>
@@ -31,9 +31,6 @@
         <!--------------------->
         </nav>
     </header>
-    <div class="backgroundvid"><!--Video de Fundo-->
-      <video class="video__fundo" src="./VID/FundoV1.mp4" autoplay loop muted></video>
-    </div>
     <!--Inicio da Barra de Navegação-->
     <div id="navbar">
         <div class="dropdown1">
@@ -72,6 +69,52 @@
     </div>
     <!--Fim da Barra de Navegação-->
 <!--Final do Cabeçãlho-->
+       <!--Slide de Descontos-->
+       <div id="slider">
+        <!----------------------------->
+              <div class="slides">
+                <!--Radio Buttons-->
+                <input type="radio" name="radio-button" id="radio1">
+                <input type="radio" name="radio-button" id="radio2">
+                <input type="radio" name="radio-button" id="radio3">
+                <input type="radio" name="radio-button" id="radio4">
+                <!--End of Radio Buttons-->
+                <!--Slides-->
+                <div class="Primeiro Slide">
+                  <img src="./IMG/Cupom_Slide1.png">
+                </div>
+                <div class="Slide">
+                  <img src="./IMG/Cupom_Slide2.png">
+                </div>
+                <div class="Slide">
+                  <img src="./IMG/Cupom_Slide3.png">
+                </div>
+                <div class="Slide">
+                  <img src="./IMG/Cupom_Slide4.png">
+                </div>
+                <!--Fim de Slides-->
+                <!--Auto Navegação-->
+                <div class="navega">
+                  <div class="auto-btn1"></div>
+                  <div class="auto-btn2"></div>
+                  <div class="auto-btn3"></div>
+                  <div class="auto-btn4"></div>
+                </div>
+              </div>
+              <!--Label/Buttons-->
+              <div class="manual-nav">
+                <label for="radio1" class="Manual-btn"></label>
+                <label for="radio2" class="Manual-btn"></label>
+                <label for="radio3" class="Manual-btn"></label>
+                <label for="radio4" class="Manual-btn"></label>
+              </div>
+              <!--End Label-->
+             </div>
+           </div>
+<!--End of slider de descontos-->
+           <div class="backgroundvid"><!--Video de Fundo-->
+            <video class="video__fundo" src="./VID/FundoV1.mp4" autoplay loop muted></video>
+          </div>
   <!--Carrocéu de Ofertas-->
   <div id="body1">
     <div class="scroller" data-animated="true">
@@ -263,23 +306,21 @@
    </div>
   <!--Fim do Carrocéu-->
    <div class="space01">
-       <!--Slide de Descontos-->
-    <div id="slider">
-      <div class="slides">
-        <!--Radio Buttons-->
-        <input type="radio" name="radio-button" id="radio1">
-        <input type="radio" name="radio-button" id="radio2">
-        <input type="radio" name="radio-button" id="radio3">
-        <input type="radio" name="radio-button" id="radio4">
-        <!--End of Radio Buttons-->
-        <!--Slides-->
-        <div class="slide1">
-          <img src="" class="im">
-        </div>
+      <!--Inicio oferta 1-->
+    <div id="off">
+      <div class="burgueroff"></div>
+      <div class="info_burguer">
+        <h1 class="nna">Hamburguer Gurmet</h1>
+        <br>
+        <br>
+        <p class="par">é um preparado de carne temperada (principalmente de carne bovina,<br> ocasionalmente de frango moído,
+           carne suína moída ou com misturas de carnes)<br> e moldada em formato circular.</p>
       </div>
-     </div>
-   </div>
-
-
+      <div class="burgueroff"></div>
+    </div>
+    <!--End-->
+    <footer>
+      <br>
+    </footer>
 </body>
 </html>

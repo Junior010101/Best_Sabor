@@ -2,7 +2,7 @@
 html{
     max-width: 100%;
     max-height: 100%;
-    background-color: whitesmoke;
+    background-color: darkgray;
 }
 video.video__fundo {
     z-index: -100;
@@ -18,7 +18,7 @@ div#body1{
     flex-direction: column-reverse;
 }
 div.space01 {
-    background-color: white;
+    background-color: darkgray;
     height: 30%;
     padding-top: 40px;
 }
@@ -178,7 +178,7 @@ div.navega div{
 .navega{
     position: absolute;
     margin-top: 370px;
-    margin-left: 38%;
+    margin-left: 38.9%;
     display: flex;
     justify-content: center;
 }
@@ -219,9 +219,10 @@ div.control{
     background-position: center;
 }
 .info_burguer{
-    height: 398px;
-    width: 795px;
+    height: 399px;
+    width: 66%;
     border: 1px solid #0b0b3f;
+    background-color: #2a2a4d;
 }
 #off {
     display: flex;
@@ -229,7 +230,7 @@ div.control{
 }
 .nna {
     margin-left: 30px;
-    color: darkblue;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 .par{

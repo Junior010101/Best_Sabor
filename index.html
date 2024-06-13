@@ -2,10 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8"><!--Escala do Zoom-->
+    <meta name="viewport" content="width=device-width, initial-scale=0.8"><!--Escala da Tela-->
     <title>Best Sabor - Inicio</title><!--Titulo do Site-->
     <link rel="stylesheet" href="./CSS/index.css"><!--CSS do Index-->
     <link rel="stylesheet" href="./CSS/header.css"><!--CSS do Cabeçãlho-->
+    <link rel="stylesheet" href="./CSS/footer.css"><!--CSS do Rodapé-->
     <script async src="./JS/searchbar.js"></script><!--Script da Barra de Pesquisa-->
     <script async src="./JS/slider.js"></script><!--Script dos Slides-->
     <link rel="shortcut icon" href="./IMG/BS-Logo(1).ico"><!--Icone do Site-->
@@ -34,31 +35,31 @@
     <!--Inicio da Barra de Navegação-->
     <div id="navbar">
         <div class="dropdown1">
-          <a href="./Bolos.html"><h4 class="left">Sanduiches</h4></a>
+          <a href="./HTML/Sanduiches.html"><h4 class="left">Sanduiches</h4></a>
           <div class="triangulo"><br></div>
         <br>
         </div>
         <!---->
         <div class="dropdown1">
-          <a href="./Bolos.html"><h4 class="left">Bolos</h4></a>
+          <a href="./HTML/Bolos.html"><h4 class="left">Bolos</h4></a>
         <div class="triangulo"><br></div>
         <br>
         </div>
         <!---->
         <div class="dropdown1">
-        <a href="./Bolos.html"><h4 class="left">Brownie</h4></a>
+        <a href="./HTML/Salgados.html"><h4 class="left">Salgados</h4></a>
         <div class="triangulo"><br></div>
         <br>
         </div>
         <!---->
         <div class="dropdown1">
-        <a href="./Bolos.html"><h4 class="left">Pasteis</h4></a>
+        <a href="./HTML/Paisteis.html"><h4 class="left">Pasteis</h4></a>
         <div class="triangulo"><br></div>
         <br>  
         </div>
         <!---->
         <div class="dropdown1">
-        <a href="./Bolos.html"><h4 class="left">Coxinha</h4></a>
+        <a href="./HTML/Coxinhas.html"><h4 class="left">Coxinha</h4></a>
         <div class="triangulo"><br></div>
         <br>          
         </div>
@@ -70,256 +71,297 @@
     <!--Fim da Barra de Navegação-->
 <!--Final do Cabeçãlho-->
        <!--Slide de Descontos-->
-       <div id="slider">
-        <!----------------------------->
-              <div class="slides">
-                <!--Radio Buttons-->
-                <input type="radio" name="radio-button" id="radio1">
-                <input type="radio" name="radio-button" id="radio2">
-                <input type="radio" name="radio-button" id="radio3">
-                <input type="radio" name="radio-button" id="radio4">
-                <!--End of Radio Buttons-->
-                <!--Slides-->
-                <div class="Primeiro Slide">
-                  <img src="./IMG/Cupom_Slide1.jpeg">
+       <div class="bodyA">
+        <div id="slider">
+          <!----------------------------->
+                <div class="slides">
+                  <!--Radio Buttons-->
+                  <input type="radio" name="radio-button" id="radio1">
+                  <input type="radio" name="radio-button" id="radio2">
+                  <input type="radio" name="radio-button" id="radio3">
+                  <input type="radio" name="radio-button" id="radio4">
+                  <!--End of Radio Buttons-->
+                  <!--Slides-->
+                  <div class="Primeiro Slide">
+                    <img src="./IMG/Cupom_Slide1.jpeg">
+                  </div>
+                  <div class="Slide">
+                    <img src="./IMG/Cupom_Slide2.png">
+                  </div>
+                  <div class="Slide">
+                    <img src="./IMG/Cupom_Slide3.png">
+                  </div>
+                  <div class="Slide">
+                    <img src="./IMG/Cupom_Slide4.png">
+                  </div>
+                  <!--Fim de Slides-->
+                  <!--Auto Navegação-->
+                  <div class="navega">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                  </div>
                 </div>
-                <div class="Slide">
-                  <img src="./IMG/Cupom_Slide2.png">
-                </div>
-                <div class="Slide">
-                  <img src="./IMG/Cupom_Slide3.png">
-                </div>
-                <div class="Slide">
-                  <img src="./IMG/Cupom_Slide4.png">
-                </div>
-                <!--Fim de Slides-->
-                <!--Auto Navegação-->
-                <div class="navega">
-                  <div class="auto-btn1"></div>
-                  <div class="auto-btn2"></div>
-                  <div class="auto-btn3"></div>
-                  <div class="auto-btn4"></div>
+                <!--Label/Buttons-->
+                <div class="manual-nav">
+                  <label for="radio1" class="Manual-btn"></label>
+                  <label for="radio2" class="Manual-btn"></label>
+                  <label for="radio3" class="Manual-btn"></label>
+                  <label for="radio4" class="Manual-btn"></label>
                 </div>
               </div>
-              <!--Label/Buttons-->
-              <div class="manual-nav">
-                <label for="radio1" class="Manual-btn"></label>
-                <label for="radio2" class="Manual-btn"></label>
-                <label for="radio3" class="Manual-btn"></label>
-                <label for="radio4" class="Manual-btn"></label>
-              </div>
+       </div>
+
               <!--End Label-->
-             </div>
            </div>
+
 <!--End of slider de descontos-->
-           <div class="backgroundvid"><!--Video de Fundo-->
-            <video class="video__fundo" src="./VID/FundoV1.mp4" autoplay loop muted></video>
-          </div>
-  <!--Carrocéu de Ofertas-->
-  <div id="body1">
-    <div class="scroller" data-animated="true">
-      <ul class="tag-list scroller__inner">
-        <li>
-              <a id="conserto" class="pretu" href="./Bolos.html">
-                  <div class="infocube">
-                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                    <h4 class="borrado">Nome da Comida</h4>
-                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                       consectetur adipiscing elit.<br>
-                        Nam vehicula, ante a lacinia<br>
-                         bibendum, elit enim cursus 
-                         <br>nibh et finibus ex dui et nibh.</p>
-                  </div>
-                </a> 
+          <div class="bodyB">
+            <div class="backgroundvid"><!--Video de Fundo-->
+              <video class="video__fundo" src="./VID/FundoV1.mp4" autoplay loop muted></video>
+            </div>
+    <!--Carrocéu de Ofertas-->
+    <div id="body1">
+      <div class="scroller" data-animated="true">
+        <ul class="tag-list scroller__inner">
+          <li>
+                <a id="conserto" class="pretu" href="./Bolos.html">
+                    <div class="infocube">
+                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                      <h4 class="borrado">Nome da Comida</h4>
+                      <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                         consectetur adipiscing elit.<br>
+                          Nam vehicula, ante a lacinia<br>
+                           bibendum, elit enim cursus 
+                           <br>nibh et finibus ex dui et nibh.</p>
+                    </div>
+                  </a> 
+          </li>
+          <li>
+                <a id="conserto" class="pretu" href="./Bolos.html">
+                    <div class="infocube">
+                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                      <h4 class="borrado">Nome da Comida</h4>
+                      <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit.<br>
+                         Nam vehicula, ante a lacinia<br>
+                          bibendum, elit enim cursus 
+                          <br>nibh et finibus ex dui et nibh.</p>
+                    </div>
+                  </a> 
+          </li>
+          <li>
+                <a id="conserto" class="pretu" href="./Bolos.html">
+                    <div class="infocube">
+                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                      <h4 class="borrado">Nome da Comida</h4>
+                      <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit.<br>
+                         Nam vehicula, ante a lacinia<br>
+                          bibendum, elit enim cursus 
+                          <br>nibh et finibus ex dui et nibh.</p>
+                    </div>
+                  </a> 
+          </li>
+          <li>
+                <a id="conserto" class="pretu" href="./Bolos.html">
+                    <div class="infocube">
+                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                      <h4 class="borrado">Nome da Comida</h4>
+                      <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit.<br>
+                         Nam vehicula, ante a lacinia<br>
+                          bibendum, elit enim cursus 
+                          <br>nibh et finibus ex dui et nibh.</p>
+                    </div>
+                  </a> 
+          </li>
+          <li>
+                <a id="conserto" class="pretu" href="./Bolos.html">
+                    <div class="infocube">
+                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                      <h4 class="borrado">Nome da Comida</h4>
+                      <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit.<br>
+                         Nam vehicula, ante a lacinia<br>
+                          bibendum, elit enim cursus 
+                          <br>nibh et finibus ex dui et nibh.</p>
+                    </div>
+                  </a> 
+          </li>
+          <li>
+                <a id="conserto" class="pretu" href="./Bolos.html">
+                    <div class="infocube">
+                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                      <h4 class="borrado">Nome da Comida</h4>
+                      <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit.<br>
+                         Nam vehicula, ante a lacinia<br>
+                          bibendum, elit enim cursus 
+                          <br>nibh et finibus ex dui et nibh.</p>
+                    </div>
+                  </a> 
+          </li>
+          <li>
+                <a id="conserto" class="pretu" href="./Bolos.html">
+                    <div class="infocube">
+                      <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                      <h4 class="borrado">Nome da Comida</h4>
+                      <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit.<br>
+                         Nam vehicula, ante a lacinia<br>
+                          bibendum, elit enim cursus 
+                          <br>nibh et finibus ex dui et nibh.</p>
+                    </div>
+                  </a> 
+          </li>
+          <li>
+            <a id="conserto" class="pretu" href="./Bolos.html">
+                <div class="infocube">
+                  <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                  <h4 class="borrado">Nome da Comida</h4>
+                  <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                     consectetur adipiscing elit.<br>
+                      Nam vehicula, ante a lacinia<br>
+                       bibendum, elit enim cursus 
+                       <br>nibh et finibus ex dui et nibh.</p>
+                </div>
+              </a> 
         </li>
         <li>
-              <a id="conserto" class="pretu" href="./Bolos.html">
-                  <div class="infocube">
-                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                    <h4 class="borrado">Nome da Comida</h4>
-                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                      consectetur adipiscing elit.<br>
-                       Nam vehicula, ante a lacinia<br>
-                        bibendum, elit enim cursus 
-                        <br>nibh et finibus ex dui et nibh.</p>
-                  </div>
-                </a> 
+            <a id="conserto" class="pretu" href="./Bolos.html">
+                <div class="infocube">
+                  <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                  <h4 class="borrado">Nome da Comida</h4>
+                  <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit.<br>
+                     Nam vehicula, ante a lacinia<br>
+                      bibendum, elit enim cursus 
+                      <br>nibh et finibus ex dui et nibh.</p>
+                </div>
+              </a> 
         </li>
         <li>
-              <a id="conserto" class="pretu" href="./Bolos.html">
-                  <div class="infocube">
-                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                    <h4 class="borrado">Nome da Comida</h4>
-                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                      consectetur adipiscing elit.<br>
-                       Nam vehicula, ante a lacinia<br>
-                        bibendum, elit enim cursus 
-                        <br>nibh et finibus ex dui et nibh.</p>
-                  </div>
-                </a> 
+            <a id="conserto" class="pretu" href="./Bolos.html">
+                <div class="infocube">
+                  <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                  <h4 class="borrado">Nome da Comida</h4>
+                  <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit.<br>
+                     Nam vehicula, ante a lacinia<br>
+                      bibendum, elit enim cursus 
+                      <br>nibh et finibus ex dui et nibh.</p>
+                </div>
+              </a> 
         </li>
         <li>
-              <a id="conserto" class="pretu" href="./Bolos.html">
-                  <div class="infocube">
-                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                    <h4 class="borrado">Nome da Comida</h4>
-                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                      consectetur adipiscing elit.<br>
-                       Nam vehicula, ante a lacinia<br>
-                        bibendum, elit enim cursus 
-                        <br>nibh et finibus ex dui et nibh.</p>
-                  </div>
-                </a> 
+            <a id="conserto" class="pretu" href="./Bolos.html">
+                <div class="infocube">
+                  <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                  <h4 class="borrado">Nome da Comida</h4>
+                  <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit.<br>
+                     Nam vehicula, ante a lacinia<br>
+                      bibendum, elit enim cursus 
+                      <br>nibh et finibus ex dui et nibh.</p>
+                </div>
+              </a> 
         </li>
         <li>
-              <a id="conserto" class="pretu" href="./Bolos.html">
-                  <div class="infocube">
-                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                    <h4 class="borrado">Nome da Comida</h4>
-                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                      consectetur adipiscing elit.<br>
-                       Nam vehicula, ante a lacinia<br>
-                        bibendum, elit enim cursus 
-                        <br>nibh et finibus ex dui et nibh.</p>
-                  </div>
-                </a> 
+            <a id="conserto" class="pretu" href="./Bolos.html">
+                <div class="infocube">
+                  <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                  <h4 class="borrado">Nome da Comida</h4>
+                  <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit.<br>
+                     Nam vehicula, ante a lacinia<br>
+                      bibendum, elit enim cursus 
+                      <br>nibh et finibus ex dui et nibh.</p>
+                </div>
+              </a> 
         </li>
         <li>
-              <a id="conserto" class="pretu" href="./Bolos.html">
-                  <div class="infocube">
-                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                    <h4 class="borrado">Nome da Comida</h4>
-                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                      consectetur adipiscing elit.<br>
-                       Nam vehicula, ante a lacinia<br>
-                        bibendum, elit enim cursus 
-                        <br>nibh et finibus ex dui et nibh.</p>
-                  </div>
-                </a> 
+            <a id="conserto" class="pretu" href="./Bolos.html">
+                <div class="infocube">
+                  <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                  <h4 class="borrado">Nome da Comida</h4>
+                  <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit.<br>
+                     Nam vehicula, ante a lacinia<br>
+                      bibendum, elit enim cursus 
+                      <br>nibh et finibus ex dui et nibh.</p>
+                </div>
+              </a> 
         </li>
         <li>
-              <a id="conserto" class="pretu" href="./Bolos.html">
-                  <div class="infocube">
-                    <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                    <h4 class="borrado">Nome da Comida</h4>
-                    <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                      consectetur adipiscing elit.<br>
-                       Nam vehicula, ante a lacinia<br>
-                        bibendum, elit enim cursus 
-                        <br>nibh et finibus ex dui et nibh.</p>
-                  </div>
-                </a> 
+            <a id="conserto" class="pretu" href="./Bolos.html">
+                <div class="infocube">
+                  <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
+                  <h4 class="borrado">Nome da Comida</h4>
+                  <p class="borrado">Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit.<br>
+                     Nam vehicula, ante a lacinia<br>
+                      bibendum, elit enim cursus 
+                      <br>nibh et finibus ex dui et nibh.</p>
+                </div>
+              </a> 
         </li>
-        <li>
-          <a id="conserto" class="pretu" href="./Bolos.html">
-              <div class="infocube">
-                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                <h4 class="borrado">Nome da Comida</h4>
-                <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                   consectetur adipiscing elit.<br>
-                    Nam vehicula, ante a lacinia<br>
-                     bibendum, elit enim cursus 
-                     <br>nibh et finibus ex dui et nibh.</p>
-              </div>
-            </a> 
-      </li>
-      <li>
-          <a id="conserto" class="pretu" href="./Bolos.html">
-              <div class="infocube">
-                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                <h4 class="borrado">Nome da Comida</h4>
-                <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                  consectetur adipiscing elit.<br>
-                   Nam vehicula, ante a lacinia<br>
-                    bibendum, elit enim cursus 
-                    <br>nibh et finibus ex dui et nibh.</p>
-              </div>
-            </a> 
-      </li>
-      <li>
-          <a id="conserto" class="pretu" href="./Bolos.html">
-              <div class="infocube">
-                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                <h4 class="borrado">Nome da Comida</h4>
-                <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                  consectetur adipiscing elit.<br>
-                   Nam vehicula, ante a lacinia<br>
-                    bibendum, elit enim cursus 
-                    <br>nibh et finibus ex dui et nibh.</p>
-              </div>
-            </a> 
-      </li>
-      <li>
-          <a id="conserto" class="pretu" href="./Bolos.html">
-              <div class="infocube">
-                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                <h4 class="borrado">Nome da Comida</h4>
-                <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                  consectetur adipiscing elit.<br>
-                   Nam vehicula, ante a lacinia<br>
-                    bibendum, elit enim cursus 
-                    <br>nibh et finibus ex dui et nibh.</p>
-              </div>
-            </a> 
-      </li>
-      <li>
-          <a id="conserto" class="pretu" href="./Bolos.html">
-              <div class="infocube">
-                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                <h4 class="borrado">Nome da Comida</h4>
-                <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                  consectetur adipiscing elit.<br>
-                   Nam vehicula, ante a lacinia<br>
-                    bibendum, elit enim cursus 
-                    <br>nibh et finibus ex dui et nibh.</p>
-              </div>
-            </a> 
-      </li>
-      <li>
-          <a id="conserto" class="pretu" href="./Bolos.html">
-              <div class="infocube">
-                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                <h4 class="borrado">Nome da Comida</h4>
-                <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                  consectetur adipiscing elit.<br>
-                   Nam vehicula, ante a lacinia<br>
-                    bibendum, elit enim cursus 
-                    <br>nibh et finibus ex dui et nibh.</p>
-              </div>
-            </a> 
-      </li>
-      <li>
-          <a id="conserto" class="pretu" href="./Bolos.html">
-              <div class="infocube">
-                <img class="caco" src="https://camo.githubusercontent.com/70937ab1109ce0ebdfc41538a3064ae7ee51592867f08e4ce5c4b4a920f3fc20/68747470733a2f2f7a7562652e696f2f66696c65732f706f722d756d612d626f612d63617573612f33363664616462316461323032353338616531333332396261333464393030362d696d6167652e706e67">
-                <h4 class="borrado">Nome da Comida</h4>
-                <p class="borrado">Lorem ipsum dolor sit amet,<br>
-                  consectetur adipiscing elit.<br>
-                   Nam vehicula, ante a lacinia<br>
-                    bibendum, elit enim cursus 
-                    <br>nibh et finibus ex dui et nibh.</p>
-              </div>
-            </a> 
-      </li>
-      </ul>
-   </div>
-   </div>
-  <!--Fim do Carrocéu-->
+        </ul>
+     </div>
+     </div>
+    <!--Fim do Carrocéu-->
+          </div> 
+
    <div class="space01">
-      <!--Inicio oferta 1-->
+        <!--Comidas-->
+        <div id="ilustr">
+          <div class="cardapio">
+            <div class="imagemsc">
+              <h1 class="hh1">Tá Com Fome?</h1>
+              <img src="https://www.uninassau.edu.br/sites/mauriciodenassau.edu.br/files/fields/imagemTopo/noticias/2020/02/sanduba.jpg" class="comida">
+              <img src="https://st.depositphotos.com/2235295/2426/i/450/depositphotos_24267657-stock-photo-close-up-of-a-plate.jpg" class="comida">  
+            </div>
+            <div class="textoalt">
+              <p class="ooo">o sanduíche natural é repleto de nutrientes. Eles são ricos em vitaminas, sais minerais,
+                 proteínas e carboidratos de qualidade, tudo o que é importante para a manutenção da boa saúde.</p>
+              <p class="ooo">Os bolos são um dos componentes principais das festas, como as de aniversário e casamento,
+                 por vezes ornamentados artisticamente e ocupando o lugar central da mesa.</p>
+            </div>
+            <div class="imagemsa">
+              <img src="https://static.itdg.com.br/images/1200-630/12d6edf758753748df23c3b69a2258fc/279010-original.jpg" class="comida">
+              <img src="https://i.ytimg.com/vi/gUcaq4yzBps/maxresdefault.jpg" class="comida">  
+            </div>
+            <div class="textoalt">
+              <p class="ooo">Feita com massa de batata, a coxinha é tradicionalmente recheada com carne de frango cozida e desfiada,
+                 podendo ter a opção de também ser recheada com requeijão cremoso, tal qual o catupiry, junto ao frango.</p>
+              <p class="ooo">Estes biscoitos de queijo são preparados bem facilmente com apenas 3 ingredientes: farinha de trigo,
+                 manteiga e queijo. Esse salgadinho de queijo não falta nas festas e padarias! Ele faz parte das memórias de infância de muitos nordestinos.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      <!--Inicio Quem Somos-->
     <div id="off">
       <div class="burgueroff"></div>
       <div class="info_burguer">
         <h1 class="nna">Quem Somos</h1>
         <br>
         <br>
-        <p class="par">Somos uma empresa que abriu ontem</p>
+        <p class="par">Somos uma empresa que abriu ontem.</p>
       </div>
       <div class="burgueroff"></div>
     </div>
+    <!------------------------>
     <!--End-->
     <footer>
-      <br>
+      <div id="falingh">
+        <a class="au" href="https://www.instagram.com/bestsabor_?igsh=MXI5MGtzdWw1NmFkeQ=="><div class="icones insta"></div></a>
+        <a class="au" href="https://github.com/Junior010101/Best_Sabor.git"><div class="icones github"></div></a>
+        <a class="au" href="https://www.tiktok.com"><div class="icones tiktok"></div></a>
+      </div>
+      <a href="./HTML/privact.html" class="termos">Termos de Uso - Privacy PoliticyS</a>
+      <p class="pfooter">Criado pelo grupo PowerShock - 2024</p>
     </footer>
 </body>
 </html>

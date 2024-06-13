@@ -1,0 +1,55 @@
+footer{
+    background-color: #2a2a4d;
+    border-top: 10px solid #4f4f8a;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.icones {
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.au:not(:first-child){
+    margin-left: 20px;
+}
+#falingh{
+    display: flex;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.pfooter {
+    display: flex;
+    align-self: center;
+    color: gray;
+    font-size: 13px;
+    margin-top: 2px;
+}
+.termos{
+    display: flex;
+    align-self: center;
+    font-size: 11px;
+    color: whitesmoke;
+}
+.insta{
+    background-image: url(../IMG/insta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 29px;
+}
+.github {
+    background-image: url(../IMG/Git.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 29px;
+}
+.tiktok{
+    background-image: url(../IMG/Tiktok.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 28px;
+}

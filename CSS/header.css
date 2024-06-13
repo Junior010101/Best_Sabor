@@ -19,6 +19,7 @@ a {
 a#redirect{
     display: flex;
     margin-left: 40px;
+    cursor: default;
 }
 div.flex{
     display: flex;
@@ -46,12 +47,13 @@ strong.B {
 strong.S {
     color: #ff7622;
     font-family: cursive;
+    margin-left: -4px;
 }
 h1.logobs {
     font-size: 20px;
 }
 input.search{
-    height: 38px;
+    height: 39px;
     width: 600px;
     margin-left: auto;
     margin-top: 30px;
@@ -74,6 +76,7 @@ button.subbutton{
     height: 40px;
     width: 80px;
     margin-right: 200px;
+    cursor: pointer;
 }
 div#navbar{
     background-color: rgba(42, 42, 77, 0.726);
@@ -125,7 +128,7 @@ div.pesquisa {
     visibility: hidden;
     animation: appear 1ms ease-in-out;
     animation-timeline: view();
-    animation-range: cover 42% cover 100%;
+    animation-range: cover 50% cover 100%;
 }
 #comp {
     display: flex;

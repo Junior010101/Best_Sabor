@@ -82,7 +82,7 @@ div#navbar{
     background-color: rgba(42, 42, 77, 0.726);
     height: 40px;
     display: flex;
-    border-bottom: 12px solid #c4c4c4;
+    border-bottom: 8px solid #c4c4c4;
     position: sticky;
     top: 0;
     z-index: 3;
@@ -127,8 +127,8 @@ div.pesquisa {
     margin-left: auto;
     visibility: hidden;
     animation: appear 1ms ease-in-out;
-    animation-timeline: view();
-    animation-range: cover 50% cover 100%;
+    animation-timeline: scroll();
+    animation-range: cover 5% cover 100%;
 }
 #comp {
     display: flex;
@@ -137,7 +137,7 @@ div.pesquisa {
 }
 @keyframes appear {
     from {
-       visibility: hidden;
+        visibility: hidden;
     }
     to {
        visibility: visible;

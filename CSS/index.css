@@ -18,7 +18,7 @@ body{
     min-height: 100%;
     max-width: 100%;
     display: grid;
-    height: 200%;
+    height: max-content;
 }
 video.video__fundo {
     z-index: -100;
@@ -37,7 +37,7 @@ div#body1{
 }
 ::-webkit-scrollbar{
     width: 5px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.452);
 }
 ::-webkit-scrollbar-thumb{
     background-color: rgba(0, 0, 0, 0.349);
@@ -66,86 +66,7 @@ div.bodyB{
     background-size: cover;
 }
  /*--------------------*/
-/*Caixas de informação*/
-div.infocube {
-    width: 250px;
-    height: 370px;
-    border-radius: 10px;
-    background-image: url(https://cdn0.tudoreceitas.com/pt/posts/1/9/1/coxinha_simples_191_600.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 10px solid #2a2a4d46;
-}
-p.borrado {
-    background-color: #c4c4c496;
-    border-radius: 10px;
-    padding: 5px 5px 5px 5px;
-    height: 100px;
-}
-h4.borrado {
-    background-color: #c4c4c496;
-    border-radius: 10px;
-    padding: 5px 2px 2px 25px;
-    margin-top: 30px;
-}
-a.pretu {
-    color: black;
-}
-img.caco {
-    width: 250px;
-    height: 160px;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-/*End of Infocube*/
-/*Inicio Animação de Scroll - Horizontal*/
-.tag-list{
-    margin: 0;
-    padding-inline: 0;
-    list-style: none;
-}
-.tag-list li {
-    padding: 1rem;
-    background: var(--clr-primary-400);
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-400);
-}
-.scroller {
-    overflow-x: auto;
-    width: 95%;
-    position: absolute;
-    z-index: 1;
-    margin-left: -9px;
-    border-radius: 10px;
-}
-.scroller__inner {
-    padding-block: 0.2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
-}
-.scroller[data-animated="true"] {
-    overflow: scroll;
-    mask: linear-gradient(90deg, rgba(0, 0, 0, 0.342), white 20%, white 80%, rgba(0, 0, 0, 0.342));
-}
-.scroller[data-animated="true"] .scroller__inner {
-    flex-wrap: nowrap;
-    animation: scroll 40s linear infinite;
-}
-@keyframes scroll {
-    to {
-        transform: translate(calc(-137% - 0.5rem));
-    }
-}
-.scroller[data-animated="true"] .scroller__inner:hover {
-    animation-play-state: paused;
-}
-.scroller[data-animated="true"]::-webkit-scrollbar {
-    display: none;
-}
-
-/*End of Scroller*/
-/*Inicio do Slider*/
+ /*Inicio do Slider*/
 #slider{
     border: 3px solid #0b0b3f;
     margin-top: 40px;
@@ -245,6 +166,85 @@ div.control{
     margin-left: -25%;
 }
 /*End of Slider*/
+/*Caixas de informação*/
+div.infocube {
+    width: 250px;
+    height: 370px;
+    border-radius: 10px;
+    background-image: url(https://cdn0.tudoreceitas.com/pt/posts/1/9/1/coxinha_simples_191_600.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 10px solid #2a2a4d46;
+}
+p.borrado {
+    background-color: #c4c4c496;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    height: 100px;
+}
+h4.borrado {
+    background-color: #c4c4c496;
+    border-radius: 10px;
+    padding: 5px 2px 2px 25px;
+    margin-top: 30px;
+}
+a.pretu {
+    color: black;
+}
+img.caco {
+    width: 250px;
+    height: 160px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+/*End of Infocube*/
+/*Inicio Animação de Scroll - Horizontal*/
+.tag-list{
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+}
+.tag-list li {
+    padding: 1rem;
+    background: var(--clr-primary-400);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-400);
+}
+.scroller {
+    overflow-x: auto;
+    width: 95%;
+    position: absolute;
+    z-index: 1;
+    margin-left: -9px;
+    border-radius: 10px;
+}
+.scroller__inner {
+    padding-block: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.scroller[data-animated="true"] {
+    overflow: scroll;
+    mask: linear-gradient(90deg, rgba(0, 0, 0, 0.342), white 20%, white 80%, rgba(0, 0, 0, 0.342));
+}
+.scroller[data-animated="true"] .scroller__inner {
+    flex-wrap: nowrap;
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+    to {
+        transform: translate(calc(-137% - 0.5rem));
+    }
+}
+.scroller[data-animated="true"] .scroller__inner:hover {
+    animation-play-state: paused;
+}
+.scroller[data-animated="true"]::-webkit-scrollbar {
+    display: none;
+}
+
+/*End of Scroller*/
 /*Inicio oferta 1*/
 .burgueroff{
     width: 200px;
@@ -290,7 +290,12 @@ html #off{
     border-radius: 10px;
     padding-bottom: 50px;
 }
-
+#car_flex {
+    display: flex;
+}
+.cardapio #car_flex {
+    justify-content: center;
+}
 .hh1 {
     padding-top: 40px;
     padding-bottom: 25px;
@@ -303,21 +308,16 @@ html #off{
 img.comida {
     height: 300px;
     width: 600px;
-    margin-left: 70px;
-}
-.comida:not(:first-child){
-    margin-left: 100px;
 }
 p.ooo{
     background-color: rgb(179, 179, 179);
     width: 560px;
-    margin-left: 100px;
     padding: 20px;
     margin-top: -5px;
-
+    margin-bottom: 0;
 }
-.ooo:not(:first-child){
-    margin-left: 105px;
+.top_flex{
+    margin-top: 50px;
 }
 .textoalt{
     display: flex;
@@ -326,3 +326,18 @@ p.ooo{
     margin-left: 30px;
     margin-top: 50px;
 }
+.sanduche0{
+    margin-right: 110px;
+    border: 5px dashed rgba(255, 228, 196, 0.555);
+}
+.bolao0{
+    border: 5px dashed rgba(255, 228, 196, 0.555);
+}
+.Coxa0{
+    border: 5px dashed rgba(255, 228, 196, 0.555);
+    margin-right: 110px;
+}
+.Salgad0{
+    border: 5px dashed rgba(255, 228, 196, 0.555);
+}
+

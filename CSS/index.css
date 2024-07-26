@@ -20,15 +20,6 @@ body{
     display: grid;
     height: max-content;
 }
-video.video__fundo {
-    z-index: -100;
-    width: 90.5%;
-    position: absolute;
-    display: grid;
-    opacity: 0.6;
-    margin-left: 4.5%;
-    display: none;
-}
 div#body1{
     display: flex;
     margin-top: 420px;
@@ -42,22 +33,12 @@ div#body1{
 ::-webkit-scrollbar-thumb{
     background-color: rgba(0, 0, 0, 0.349);
 }
-div.bodyA{
-    background-color: rgb(221, 221, 221);
-    width: 98%;
-    padding-bottom: 30px;
-    top: 0;
-    margin-bottom: 20px;
-    justify-self: center;
-    margin-top: 10px;
-    border-radius: 10px;
-}
 div.bodyB{
     background-color: rgb(221, 221, 221);
     border: 20px solid rgb(221, 221, 221);
     width: 95.5%;
     padding-bottom: 30px;
-    top: 0;
+    margin-top: 15px;
     justify-self: center;
     padding-top: 20px;
     border-radius: 10px;
@@ -68,14 +49,13 @@ div.bodyB{
  /*--------------------*/
  /*Inicio do Slider*/
 #slider{
-    border: 3px solid #0b0b3f;
-    margin-top: 40px;
-    width: 90%;
-    height: 450px;
+    margin-top: -47px;
+    width: 99%;
+    height: 530px;
     overflow: hidden;
     margin-bottom: 40px;
-    margin-left: 4.5%;
     justify-items: center;
+    justify-self: center;
 }
 .slides{
     width: 400%;
@@ -87,21 +67,24 @@ div.bodyB{
 }
 .Slide{
     width: 25%;
+    height: 100%;
     position: relative;
 
 }
 .Slide img{
     width: 100%;
-    height: 450px;
+    height: 530px;
 }
 .manual-nav{
     position: absolute;
     width: 89.4%;
     display: flex;
     justify-content: center;
+    margin-top: 94px;
+    margin-left: 3.6%;
 }
 .Manual-btn{
-    border: 2px solid rgb(43, 43, 43);
+    border: 2px solid rgb(148, 148, 148);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -135,10 +118,12 @@ div.navega div{
 .navega{
     position: absolute;
     width: 89.4%;
-    margin-top: 413px;
+    margin-top: 600px;
     display: flex;
     justify-content: center;
     align-self: center;
+    justify-self: center;
+    margin-left: 3.6%;
 }
 .navega div:not(:last-child){
     margin-right: 40px;
@@ -164,6 +149,16 @@ div.control{
 }
 .control-left:checked ~ .Primeiro{
     margin-left: -25%;
+}
+#Decoration{
+    justify-self: center;
+    width: 99%;
+    z-index: 2;
+    height: 25px;
+    background-color: rgb(221, 221, 221);
+    margin-top: -40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 /*End of Slider*/
 /*Caixas de informação*/
@@ -245,7 +240,7 @@ img.caco {
 }
 
 /*End of Scroller*/
-/*Inicio oferta 1*/
+/*Inicio oferta*/
 .burgueroff{
     width: 200px;
     height: 400px;
@@ -340,4 +335,7 @@ p.ooo{
 .Salgad0{
     border: 5px dashed rgba(255, 228, 196, 0.555);
 }
+/* Fim da oferta */
 
+
+ 

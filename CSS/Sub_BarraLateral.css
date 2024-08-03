@@ -1,0 +1,201 @@
+aside{
+    background-color: #2a2a4d;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    user-select: none;
+}
+/* Inicio da logo*/
+a#redirect{
+    display: flex;
+    margin-left: 8px;
+    margin-right: 50px;
+    cursor: default;
+}
+div.flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+img.logo{
+    width: 85px;
+    height: 85px;
+}
+h1.hd {
+    color: white;
+    height: 25px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    margin-top: 15px;
+}
+h1.sabor {
+    margin-top: -25px;
+    margin-left: 7px;
+}
+strong.B {
+    color: #4747d4;
+    font-family: cursive;
+}
+strong.S {
+    color: #ff7622;
+    font-family: cursive;
+}
+h1.logobs {
+    font-size: 17px;
+    display: flex;
+    margin-left: -5px;
+    margin-top: 17px;
+}
+/*Fim da logo*/
+/*Barra de navegação*/
+div#navbar{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    border-left: 10px solid rgba(0, 0, 0, 0.466);
+}
+::placeholder {
+    user-select: none;
+}
+br{
+    user-select: none;
+}
+div.pesquisa:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+.dropdown1:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+div.dropdown1 {
+    display: flex;
+    text-align: center;
+}
+a.drop1{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 77px;
+}
+a.drop2{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 120px;
+}
+a.drop3{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 94px;
+
+}
+a.drop4{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 110px;
+}
+a.drop5{
+    display: flex;
+    padding-left: 30px;
+    padding-right: 100px;
+}
+div.triangulo{
+    height: 0px;
+    width: 0px;
+    margin-left: 10px;
+    margin-top: 21px;
+    border-top: 11px solid white;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    user-select: none;
+}
+h4.left{
+    user-select: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 15px;
+}
+div.config{
+    height: 40px;
+    width: 40px;
+    background-image: url(../IMG/Config_ico.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.pesquisa {
+    height: 40px;
+    width: 40px;
+    background-image: url(../IMG/Lupa__ico-pesquisa.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Fim da barra de navegação*/
+/*Inicio do Rodapé*/
+footer{
+    background-color: #2a2a4d;
+    border-top: 10px solid #4f4f8a;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.icones {
+    height: 29px;
+    width: 29px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.au:not(:first-child){
+    margin-left: 15px;
+}
+#falingh{
+    display: flex;
+    align-self: center;
+    margin-bottom: 20px;
+}
+.pfooter {
+    display: flex;
+    align-self: center;
+    color: gray;
+    font-size: 10px;
+    margin-top: 2px;
+}
+.termos{
+    display: flex;
+    align-self: center;
+    font-size: 10px;
+    color: whitesmoke;
+}
+.insta{
+    background-image: url(../IMG/insta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+.github {
+    background-image: url(../IMG/Git.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+.tiktok{
+    background-image: url(../IMG/Tiktok.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+
+
+

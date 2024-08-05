@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="../CSS/footer.css"> <!--CSS do rodapé-->
     <link rel="stylesheet" href="../CSS/CSS_SubPages.css"><!--CSS da pagina-->
     <link rel="stylesheet" href="../CSS/Sub_BarraLateral.css"><!--CSS do cabeçãlho e do rodapé-->
+    <script async src="../JS/PopUp.js"></script><!--PopUp de compra-->
 </head>
-<body>
+<body class="BCsanduiche">
   <aside>
     <header><!--Inicio do Cabeçãlho-->
       <nav>
@@ -90,15 +91,24 @@
           <div class="estrelas"><p>(0,0)</p></div>
         </div>
       </div>
-     <button class="comprar">Comprar</button>
+     <button id="botao" class="comprar">Comprar</button>
+     <dialog>
+      <button id="fechar">X</button>
+      <h2>titulo</h2>
+      <P>algo</P>
+      <!--Tela de carregamento-->
+      <div class="tela carregando">
+        <span class="span"></span>
+        <span class="spano"></span>
+        <span class="spana"></span>
+      </div>
+     </dialog>
     </section>
     <section class="descricao">
       <h1 class="des">Descrição:</h1>
       <p>É o sanduíche de dois andares mais famoso do mundo. Originalmente, são três fatias de pão torradas, peito de frango desfiado (ou peito de peru), alface crespa, tomate e bacon torrado. A maionese é obrigatória.<br><br>
         Dois clubes de Nova York disputam sua autoria. A primeira versão é de que o sanduíche teria sido inventado em 1836, num clube privado, chamado Union Club of New York City. A outra, é de que nasceu em 1894 na cozinha de um cassino chamado Saratoga Club, também em Nova York, onde homens apostavam em corridas de cavalos.</p>
     </section>
-
-
   </main>
 </body>
 </html>

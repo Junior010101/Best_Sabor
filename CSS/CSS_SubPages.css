@@ -8,17 +8,37 @@ body{
     height: 100%;
     padding: 0;
     margin: 0;
-    background-image: url(https://cdn0.tudoreceitas.com/pt/posts/1/9/1/coxinha_simples_191_600.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 510px;
+    background-position-y: -300px;
+    background-position-x: 197px;
+    background-repeat: repeat;
 }
 ::-webkit-scrollbar{
     width: 8px;
     background-color: rgba(255, 255, 255, 0.452);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: rgba(64, 0, 80, 0.658);
+    border-radius: 15px;
 }
+/*Planos de fundo*/
+body.BCsanduiche{
+    background-image: url(../IMG/background_sanduiches.png);
+}
+body.BCbolo{
+    background-image: url(../IMG/background_bolos.png);
+}
+body.BCsalgado{
+    background-image: url(../IMG/background_salgados.png);
+}
+body.BCpastel{
+    background-image: url(../IMG/background_pasteis.png);
+}
+body.BCcoxinha{
+    background-image: url(../IMG/background_coxinhas.png);
+}
+/*Fim dos Planos de fundo*/
+/*Pagina de compra*/
 main{
     background-color: rgb(221, 221, 221);
     width: 610px;
@@ -30,6 +50,7 @@ main{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
+/*Botão de back*/
 button.voltar{
     background-image: url(../IMG/ico_voltar.png);
     background-repeat: no-repeat;
@@ -55,6 +76,7 @@ a.avoltar{
     margin-right: 15px;
     margin-top: 15px;
 }
+/*Fim do botão*/
 img.imc{
     width: 450px;
     height: 250px;
@@ -135,13 +157,62 @@ button.comprar{
 button.comprar:hover{
     background-color: rgba(0, 0, 0, 0.226);
 }
-h1.des{
-    font-family: cursive;
-}
+/*Descrição*/
 section.descricao{
     width: 500px;
     margin-left: 65px;
     margin-top: 50px;
     border-top: 2px solid rgba(0, 0, 0, 0.555);
     padding-bottom: 40px;
+}
+h1.des{
+    font-family: cursive;
+}
+/*Fim da descrição*/
+/*Fim da pagina de Compra*/
+/*Inicio PopUp*/
+dialog{
+    width: 1200px;
+    height: 600px;
+}
+.carregando{
+    background-color: rgb(221, 221, 221);
+    width: 1232px;
+    height: 632px;
+    position: fixed;
+    margin-top: -138px;
+    margin-left: -16px;
+    z-index: 1000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+body .carregando{
+    justify-content: center;
+}
+.span, .spano, .spana{
+    border: 5px solid black;
+    border-radius: 50%;
+    margin: 15px;
+    opacity: 0;
+}
+.pontos{
+    display: none;
+}
+.span:nth-child(1) {
+    animation: pre-carregamento .6s ease-in-out alternate infinite;
+}
+.spano:nth-child(2) {
+    animation: pre-carregamento .6s ease-in-out alternate .2s infinite;
+}
+.spana:nth-child(3) {
+    animation: pre-carregamento .6s ease-in-out alternate .4s infinite;
+
+}
+@keyframes pre-carregamento{
+    100% {
+        transform: scale(2);
+        opacity: 1;
+    }
 }

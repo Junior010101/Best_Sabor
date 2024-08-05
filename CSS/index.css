@@ -27,11 +27,12 @@ div#body1{
     align-items: center;
 }
 ::-webkit-scrollbar{
-    width: 5px;
+    width: 8px;
     background-color: rgba(255, 255, 255, 0.452);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: rgba(64, 0, 80, 0.658);
+    border-radius: 15px;
 }
 div.bodyB{
     background-color: rgb(221, 221, 221);

@@ -180,7 +180,7 @@ dialog{
     width: 1232px;
     height: 632px;
     position: fixed;
-    margin-top: -138px;
+    margin-top: -16px;
     margin-left: -16px;
     z-index: 1000;
     overflow: hidden;
@@ -215,4 +215,79 @@ body .carregando{
         transform: scale(2);
         opacity: 1;
     }
+}
+button#fechar{
+    z-index: 10;
+    position: fixed;
+    user-select: none;
+}
+div.vermelho{
+    background-color: rgb(207, 0, 0);
+    height: 250px;
+    width: 1232px;
+    position: fixed;
+    margin-top: -16px;
+    margin-left: -16px;
+}
+section.erro{
+    background-color: white;
+    height: 460px;
+    width: 515px;
+    position: fixed;
+    margin-top: 70px;
+    margin-left: 330px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    box-shadow: 4px 6px #888888;
+}
+div.img_erro{
+    background-image: url(../IMG/X_negado.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 190px;
+    height: 150px;
+    width: 150px;
+    margin-left: 180px;    
+    margin-top: 10px;
+}
+h1.h1_ops{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+}
+p.p_erro{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    margin-top: -10px;
+}
+p.erro_vermelho{
+    font-family: cursive;
+    text-align: center;
+    font-size: 16px;
+    margin-top: -15px;
+    color: rgb(255, 0, 85);
+}
+p.duvida{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 0, 85);
+    font-family: cursive;
+    margin-left: 350px;
+    margin-top: 0px;
+}
+button#fechar2{
+    height: 45px;
+    width: 85px;
+    border-radius: 5px;
+    margin-left: 210px;
+    margin-top: 10px;
+    background-color: #3483FA;
+    color: white;
+    user-select: none;
+    border-color: #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0.3px 1px #888888;
+    cursor: pointer;
 }

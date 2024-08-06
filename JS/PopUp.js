@@ -1,4 +1,5 @@
 const fechar = document.getElementById("fechar");
+const fechar2 = document.getElementById("fechar2")
 const popup = document.querySelector("dialog");
 const butao = document.getElementById("botao");
 
@@ -10,6 +11,11 @@ butao.onclick = function () {
     }, 4600)    
 }
 fechar.onclick = function () {
+    popup.close(
+        Reset()
+    )
+}
+fechar2.onclick = function () {
     popup.close(
         Reset()
     )

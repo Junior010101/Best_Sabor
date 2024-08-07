@@ -153,6 +153,7 @@ button.comprar{
     font-size: 15px;
     font-style: oblique;
     cursor: pointer;
+    user-select: none;
 }
 button.comprar:hover{
     background-color: rgba(0, 0, 0, 0.226);

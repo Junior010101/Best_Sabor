@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/header.css"><!--CSS do Cabeçãlho-->   
     <link rel="stylesheet" href="../CSS/footer.css"> <!--CSS do rodapé-->
     <script src="./JS/searchbar.js"></script><!--Script da Barra de Pesquisa-->
+    <script async src="../JS/DropDown.js"></script><!--Script da barra de navegação-->
     <link rel="shortcut icon" href="../IMG/BS-Logo(1).ico"><!--Icone do Site-->
 </head>
 <body><!--Inicio do Site-->
@@ -33,46 +34,491 @@
 </header>
 <!--Inicio da Barra de Navegação-->
 <div id="navbar">
-    <div class="dropdown1">
-      <a href="../HTML/Sanduiches.html"><h4 class="left">Sanduiches</h4></a>
-      <div class="triangulo"><br></div>
-    <br>
-    </div>
-    <!---->
-    <div class="dropdown1">
-      <a href="../HTML/Bolos.html"><h4 class="left">Bolos</h4></a>
+  <div class="drop" id="dropdown">
+    <a href="../HTML/Sanduiches.html"><h4 class="left">Sanduiches</h4></a>
     <div class="triangulo"><br></div>
-    <br>
-    </div>
-    <!---->
-    <div class="dropdown1">
-    <a href="../HTML/Salgados.html"><h4 class="left">Salgados</h4></a>
-    <div class="triangulo"><br></div>
-    <br>
-    </div>
-    <!---->
-    <div class="dropdown1">
-    <a href="../HTML/Paisteis.html"><h4 class="left">Pasteis</h4></a>
-    <div class="triangulo"><br></div>
-    <br>  
-    </div>
-    <!---->
-    <div class="dropdown1">
-    <a href="../HTML/Coxinhas.html"><h4 class="left">Coxinha</h4></a>
-    <div class="triangulo"><br></div>
-    <br>          
-    </div>
-    <div id="comp">
-      <div class="pesquisa"><br></div>
-      <div class="config"><br></div>
-    </div>
+    <dialog id="popup">
+      <input type="radio" name="nobru" id="nobru1">
+      <input type="radio" name="nobru" id="nobru2">
+      <input type="radio" name="nobru" id="nobru3">
+      <input type="radio" name="nobru" id="nobru4">
+      <div class="flaxs">
+        <div id="sites">
+          <div class="card">
+            <img src="https://cdn.deliway.com.br/blog/base/a08/1ca/b42/tipos-ideias-dicas-sabores-sanduiches-tres-fatias-club-sandwich-classico-americano.jpg">
+            <div>
+              <h2>Club sandwich</h2>
+              <h3>Sanduiche</h3>
+              <span>R$ 25,50</span>
+              <a href="../HTML_Sub-Sanduiches/Sub-Club_Sanduiche.html"><button>Saiba mais</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://cdn.deliway.com.br/blog/base/78b/c62/d08/tipos-ideias-dicas-sabores-sanduiches-carne-assada.jpg">
+            <div>
+              <h2>Sanduíche de carne assada</h2>
+              <h3>Sanduiche</h3>
+              <span>R$ 27,90</span>
+              <a href="../HTML_Sub-Sanduiches/Sub-Sanduíche_de_Carne.html"><button>Saiba mais</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://cdn.deliway.com.br/blog/base/dc6/a7e/655/tipos-ideias-dicas-sabores-sanduiches-atum-maionese.jpg">
+            <div>
+              <h2>Sanduíche de atum</h2>
+              <h3>Sanduiche</h3>
+              <span>R$ 10,00</span>
+              <a href="../HTML_Sub-Sanduiches/Sub-Sanduíche_de_atum.html"><button>Saiba mais</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://cdn.deliway.com.br/blog/base/ccd/2e3/eaa/tipos-ideias-dicas-sabores-sanduiches-enrolados-vegetarianos-wrap-tortilha-homus-arabe.jpg">
+            <div>
+              <h2>Wrap vegetariano com homus</h2>
+              <h3>Sanduiche</h3>
+              <span>R$ 19,99</span>
+              <a href="../HTML_Sub-Sanduiches/Sub-Wrap_Vegetariano.html"><button>Saiba mais</button></a>
+            </div>
+          </div>
+        </div>
+        <div id="sites2">
+          <div class="card">
+            <img src="https://cdn.deliway.com.br/blog/base/748/d6b/6ed/tipos-ideias-dicas-sabores-sanduiches-refrescantes-gourmet-salada-frango.jpg">
+            <div>
+              <h2>Sanduíche de salada de frango</h2>
+              <h3>Sanduiche</h3>
+              <span>R$ 9,40</span>
+              <a href="../HTML_Sub-Sanduiches/Sub-Sanduiche_de_frango.html"><button>Saiba mais</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://cdn.deliway.com.br/blog/base/05b/8ca/af6/tipos-ideias-dicas-sabores-sanduiches-macios-suculentos-carne-porco-pernil.jpg">
+            <div>
+              <h2>Sanduíche de pernil marinado</h2>
+              <h3>Sanduiche</h3>
+              <span>R$ 33,29</span>
+              <a href="../HTML_Sub-Sanduiches/Sub-Sanduíche_de_pernil.html"><button>Saiba mais</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://cdn.deliway.com.br/blog/base/6ad/417/4eb/tipos-ideias-dicas-sabores-sanduiches-simples-rapidos-peito-peru.jpg">
+            <div>
+              <h2>Sanduíche de peito de peru</h2>
+              <h3>Sanduiche</h3>
+              <span>R$ 9,90</span>
+              <a href="../HTML_Sub-Sanduiches/Sub-Sanduíche_de_peru.html"><button>Saiba mais</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://cdn.deliway.com.br/blog/base/800/4d6/37b/tipos-ideias-dicas-sabores-sanduiches-costela-porco-barbecue-bbq.jpg">
+            <div>
+              <h2>Sanduíche de costela de porco com barbecue</h2>
+              <h3>Sanduiche</h3>
+              <span>R$ 41,90</span>
+              <a href="../HTML_Sub-Sanduiches/Sub-Sanduíche_de_costela.html"><button>Saiba mais</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="inversobubu">back</button>
+      <button id="bubu">next</button>
+    </dialog>
   </div>
+  <!---->
+  <div class="drop" id="dropdown2">
+    <a href="../HTML/Bolos.html"><h4 class="left">Bolos</h4></a>
+  <div class="triangulo"><br></div>
+  <dialog id="popup2">
+    <input type="radio" name="nobro" id="nobro1">
+    <input type="radio" name="nobro" id="nobro2">
+    <input type="radio" name="nobro" id="nobro3">
+    <input type="radio" name="nobro" id="nobro4">
+    <div class="flaxs2">
+      <div id="sitess">
+        <div class="card">
+          <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/05/27/2118220279-bolo-de-chocolate-com-cobertura.jpg">
+          <div>
+            <h2>Bolo de chocolate</h2>
+            <h3>Bolo</h3>
+            <span>R$ 21,80</span>
+            <a href="../HTML_Sub-Bolos/Sub-Bolo_de_Chocolate.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/05/27/590453022-bolo-de-banana-caramelizada-pratico.jpg">
+          <div>
+            <h2>Bolo de banana</h2>
+            <h3>Bolo</h3>
+            <span>R$ 28,95</span>
+            <a href="../HTML_Sub-Bolos/Sub-Bolo_de_banana.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/05/27/1343437186-bolo-de-caneca-com-calda-de-morango.jpg">
+          <div>
+            <h2>Bolo de caneca</h2>
+            <h3>Bolo</h3>
+            <span>R$ 16,10</span>
+            <a href="../HTML_Sub-Bolos/Sub-Bolo_de_caneca.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/05/27/1897530609-bolo-caseiro-de-milho.jpg">
+          <div>
+            <h2>Bolo de milho</h2>
+            <h3>Bolo</h3>
+            <span>R$ 22,00</span>
+            <a href="../HTML_Sub-Bolos/Sub-Bolo_de_milho.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+         </div>
+      <div id="sitess2">
+        <div class="card">
+          <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/05/27/378548824-bolo-de-fuba-da-vovo.jpg">
+          <div>
+            <h2>Bolo de fubá da vovó</h2>
+            <h3>Bolo</h3>
+            <span>R$ 24,80</span>
+            <a href="../HTML_Sub-Bolos/Sub-Bolo_de_fubá.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/05/27/103508661-bolo-de-airfryer.jpg">
+          <div>
+            <h2>Bolo de airfryer</h2>
+            <h3>Bolo</h3>
+            <span>R$ 20,10</span>
+            <a href="../HTML_Sub-Bolos/Sub-Bolo_de_airfrier.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/05/27/605314972-bolo-de-laranja-com-casca.jpg">
+          <div>
+            <h2>Bolo de laranja</h2>
+            <h3>Bolo</h3>
+            <span>R$ 24,95</span>
+            <a href="../HTML_Sub-Bolos/Sub-Bolo_de_laranja.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/05/27/91491926-bolo-de-chocolate-confeitado.jpg">
+          <div>
+            <h2>Bolo redondo</h2>
+            <h3>Bolo</h3>
+            <span>R$ 77,40</span>
+            <a href="../HTML_Sub-Bolos/Sub-Bolo_redondo.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="inversobubu2"  id="voltar2">back</button>
+    <button class="bubu2" id="botao2">next</button>
+  </dialog>
+  </div>
+  <!---->
+  <div class="drop" id="dropdown3">
+  <a href="../HTML/Salgados.html"><h4 class="left">Salgados</h4></a>
+  <div class="triangulo"><br></div>
+  <dialog id="popup3">
+    <input type="radio" name="nobra" id="nobra1">
+    <input type="radio" name="nobra" id="nobra2">
+    <input type="radio" name="nobra" id="nobra3">
+    <input type="radio" name="nobra" id="nobra4">
+    <div class="flaxs3">
+      <div id="sites">
+        <div class="card">
+        <img src="https://www.receiteria.com.br/wp-content/uploads/enroladinho-de-queijo-e-presunto-na-airfryer-730x480.jpeg">
+        <div>
+          <h2>Enroladinho de queijo e presunto</h2>
+          <h3>Salgado</h3>
+          <span>R$ 8,99</span>
+          <a href="../HTML_Sub-Salgados/Sub-Enroladinho_de_queijo.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="https://www.saboresajinomoto.com.br/uploads/images/recipes/bolinho-de-chuva-salgado.jpg">
+        <div>
+          <h2>Bolinho de chuva salgado</h2>
+          <h3>Salgado</h3>
+          <span>R$ 4,60</span>
+          <a href="../HTML_Sub-Salgados/Sub-Bolinho_de_chuva.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="https://www.receiteria.com.br/wp-content/uploads/enroladinho-de-salsicha-assado-12-730x480.jpeg">
+        <div>
+          <h2>Enroladinhos de salsicha assados</h2>
+          <h3>Salgado</h3>
+          <span>R$ 5,90</span>
+          <a href="../HTML_Sub-Salgados/Sub-Enroladinhos_de_salsicha.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://imagem.band.com.br/28/f_361228.jpg">
+        <div>
+          <h2>risoles de camarão</h2>
+          <h3>Salgado</h3>
+          <span>R$ 7,90</span>
+          <a href="../HTML_Sub-Salgados/Sub-risoles_de_camarão.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+       </div>
+       <div id="sites2">
+        <div class="card">
+          <img src="https://www.receiteria.com.br/wp-content/uploads/salgado-assado-com-carne-moida-1-730x480.jpg">
+          <div>
+            <h2>Salgado assado com carne moida</h2>
+            <h3>Salgado</h3>
+            <span>R$ 10,80</span>
+            <a href="../HTML_Sub-Salgados/Sub-Salgado_de_carne-moida.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.receiteria.com.br/wp-content/uploads/hamburgao-de-forno-capa-730x480.jpeg">
+          <div>
+            <h2>Hamburguer de forno</h2>
+            <h3>Salgado</h3>
+            <span>R$ 4,95</span>
+            <a href="../HTML_Sub-Salgados/Sub-Hamburguer_de_forno.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.receiteria.com.br/wp-content/uploads/salgadinho-assado-de-queijo-01-730x480.jpg">
+          <div>
+            <h2>Salgadinho assado de quijo</h2>
+            <h3>Salgado</h3>
+            <span>R$ 20,00</span>
+            <a href="../HTML_Sub-Salgados/Sub-Salgadinho_de_queijo.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://www.receiteria.com.br/wp-content/uploads/salgadinho-de-massa-folhada-730x480.jpg">
+          <div>
+            <h2>Salgadinho de massa folhada</h2>
+            <h3>Salgado</h3>
+            <span>R$ 6,50</span>
+            <a href="../HTML_Sub-Salgados/Sub-Salgadinho_de_massa-folhada.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+       </div>
+    </div>
+    <button class="inversobubu2"  id="voltar3">back</button>
+    <button class="bubu2" id="botao3">next</button>
+  </dialog>
+  </div>
+  <!---->
+  <div class="drop" id="dropdown4">
+  <a href="../HTML/Paisteis.html"><h4 class="left">Pasteis</h4></a>
+  <div class="triangulo"><br></div>
+  <dialog id="popup4">
+    <input type="radio" name="nobrs" id="nobrs1">
+    <input type="radio" name="nobrs" id="nobrs2">
+    <input type="radio" name="nobrs" id="nobrs3">
+    <input type="radio" name="nobrs" id="nobrs4">
+    <div class="flaxs4">
+      <div id="sites">
+        <div class="card">
+        <img src="https://www.receiteria.com.br/wp-content/uploads/pastel-de-banana-com-canela-capa-730x480.jpeg">
+        <div>
+          <h2>Pastel de banana com canela</h2>
+          <h3>Pastel</h3>
+          <span>R$ 23,50</span>
+          <a href="../HTML_Sub-Pasteis/Sub-Pastel_de_banana.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.receiteria.com.br/wp-content/uploads/pastel-de-forno-de-frango-simples-00-730x477.jpg">
+        <div>
+          <h2>Pastel de Forno de Frango</h2>
+          <h3>Pastel</h3>
+          <span>R$ 3,20</span>
+          <a href="../HTML_Sub-Pasteis/Sub-Pastel_de_forno.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.receiteria.com.br/wp-content/uploads/pastel-de-leite-ninho-com-nutella-730x477.jpg">
+        <div>
+          <h2>Pastel de Leite ninho com nutela</h2>
+          <h3>Pastel</h3>
+          <span>R$ 13,00</span>
+          <a href="../HTML_Sub-Pasteis/Sub-Pastel_de_Leite-ninho.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://www.receiteria.com.br/wp-content/uploads/pastel-lolita-e1681922852493-720x480.jpeg">
+        <div>
+          <h2>Pastel Lolita</h2>
+          <h3>Pastel</h3>
+          <span>R$ 2,50</span>
+          <a href="../HTML_Sub-Pasteis/Sub-Pastel_Lolita.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+       </div>
+       <div id="sites2">
+        <div class="card">
+          <img src="https://www.receiteria.com.br/wp-content/uploads/pastel-de-santa-clara-730x477.jpg">
+          <div>
+            <h2>Pastel de Santa Clara</h2>
+            <h3>Pastel</h3>
+            <span>R$ 12,55</span>
+            <a href="../HTML_Sub-Pasteis/Sub-Pastel_de_Santa-Clara.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://www.receiteria.com.br/wp-content/uploads/pastel-folhado-de-maca-1-730x480.jpg">
+          <div>
+            <h2>Pastel Folhado</h2>
+            <h3>Pastel</h3>
+            <span>R$ 5,45</span>
+            <a href="../HTML_Sub-Pasteis/Sub-Pastel_Folhado.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://www.receiteria.com.br/wp-content/uploads/pastel-de-forno-de-banana-01-730x480.png">
+          <div>
+            <h2>Pastel de forno de Banana</h2>
+            <h3>Pastel</h3>
+            <span>R$ 3,30</span>
+            <a href="../HTML_Sub-Pasteis/Sub-Pastel_de_forno-Banana.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://blog.dipratos.com.br/wp-content/uploads/2022/06/pastel-de-camarao-com-queijo-scaled-e1654349909333-1024x576.jpeg">
+          <div>
+            <h2>Pastel de Camarao com Queijo</h2>
+            <h3>Pastel</h3>
+            <span>R$ 21,70</span>
+            <a href="../HTML_Sub-Pasteis/Sub-Pastel_de_Camarao.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+       </div>
+    </div>
+    <button class="inversobubu2"  id="voltar4">back</button>
+    <button class="bubu2" id="botao4">next</button>
+  </dialog>
+  </div>
+  <!---->
+  <div class="drop" id="dropdown5">
+  <a href="../HTML/Coxinhas.html"><h4 class="left">Coxinha</h4></a>
+  <div class="triangulo"><br></div>
+  <dialog id="popup5">
+    <input type="radio" name="nobrr" id="nobrr1">
+    <input type="radio" name="nobrr" id="nobrr2">
+    <input type="radio" name="nobrr" id="nobrr3">
+    <input type="radio" name="nobrr" id="nobrr4">
+    <div class="flaxs5">
+      <div id="sites">
+
+        <div class="card">
+        <img src="https://static.itdg.com.br/images/auto-auto/d994159ecf2edacd8f070838271aba9c/coxinha-tradicional-300x200.jpg">
+        <div>
+          <h2>Coxinha de galinha</h2>
+          <h3>Coxinha</h3>
+          <span>R$ 25,00</span>
+          <a href="../HTML_Sub-Coxinhas/Sub-Coxinha_de_galinha.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="https://static.itdg.com.br/images/auto-auto/57c51a933cb04eb2114d274b5c92f9f6/prato-de-coxinhas-300x199.jpg">
+        <div>
+          <h2>Coxinha de mussarela</h2>
+          <h3>Coxinha</h3>
+          <span>R$ 14,30</span>
+          <a href="../HTML_Sub-Coxinhas/Sub-Coxinha_de_mussarela.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="https://static.itdg.com.br/images/auto-auto/c2c3726be238ed878e3e429f258844ec/coxinha-fit-300x220.jpg">
+        <div>
+          <h2>Coxinha de Batata doce</h2>
+          <h3>Coxinha</h3>
+          <span>R$ 12,20</span>
+          <a href="../HTML_Sub-Coxinhas/Sub-Coxinha_de_Batata.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="https://static.itdg.com.br/images/auto-auto/f237d16c47c14283f499109185009df0/coxinha-com-molho-de-pimenta-300x200.jpg">
+        <div>
+          <h2>Coxinha de massa de arroz</h2>
+          <h3>Coxinha</h3>
+          <span>R$ 15,00</span>
+          <a href="../HTML_Sub-Coxinhas/Sub-Coxinha_de_arroz.html"><button>Saiba mais</button></a>
+        </div>
+      </div>
+       </div>
+       <div id="sites2">
+        <div class="card">
+          <img src="https://static.itdg.com.br/images/auto-auto/55c20c3c0bb8e31a6eb5244b713d8c6d/coxinha-de-churros-300x284.jpg">
+          <div>
+            <h2>Coxinha de chocolate</h2>
+            <h3>Coxinha</h3>
+            <span>R$ 13,01</span>
+            <a href="../HTML_Sub-Coxinhas/Sub-Coxinha_de_chocolate.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://static.itdg.com.br/images/auto-auto/d46aa1cca873c785447fedc02319f0f9/coxinha-na-frigideira-300x200.jpg">
+          <div>
+            <h2>Coxinha integral</h2>
+            <h3>Coxinha</h3>
+            <span>R$ 16,00</span>
+            <a href="../HTML_Sub-Coxinhas/Sub-Coxinha_integral.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://static.itdg.com.br/images/auto-auto/a154597cd87f7a5a6a7af6ef31e230e9/coxinha.jpg">
+          <div>
+            <h2>Coxinha de morango</h2>
+            <h3>Coxinha</h3>
+            <span>R$ 18,50</span>
+            <a href="../HTML_Sub-Coxinhas/Sub-Coxinha_de_morango.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="https://riosupermarket.com/image/cache/catalog/coxinha%20presunto-500x500.jpg">
+          <div>
+            <h2>Coxinha Misto</h2>
+            <h3>Coxinha</h3>
+            <span>R$ 11,87</span>
+            <a href="../HTML_Sub-Coxinhas/Sub-Coxinha_Misto.html"><button>Saiba mais</button></a>
+          </div>
+        </div>
+       </div>
+    </div>
+    <button class="inversobubu2"  id="voltar5">back</button>
+    <button class="bubu2" id="botao5">next</button>
+  </dialog>
+  </div>
+  <div id="comp">
+    <div class="pesquisa"><br></div>
+    <div class="config"><br></div>
+  </div>
+</div>
 <!--Fim da Barra de Navegação-->
 <!--Final do Cabeçãlho-->
 <!--Cards-->
-   <div id="Pag1">
-  <div id="sites">
-    <div class="card">
+   <div id="Pag12">
+  <div id="sites22">
+    <div class="card2">
     <img src="https://www.receiteria.com.br/wp-content/uploads/enroladinho-de-queijo-e-presunto-na-airfryer-730x480.jpeg">
     <div>
       <h2>Enroladinho de queijo e presunto</h2>
@@ -82,7 +528,7 @@
     </div>
   </div>
 
-  <div class="card">
+  <div class="card2">
     <img src="https://www.saboresajinomoto.com.br/uploads/images/recipes/bolinho-de-chuva-salgado.jpg">
     <div>
       <h2>Bolinho de chuva salgado</h2>
@@ -92,7 +538,7 @@
     </div>
   </div>
 
-  <div class="card">
+  <div class="card2">
     <img src="https://www.receiteria.com.br/wp-content/uploads/enroladinho-de-salsicha-assado-12-730x480.jpeg">
     <div>
       <h2>Enroladinhos de salsicha assados</h2>
@@ -101,7 +547,7 @@
       <a href="../HTML_Sub-Salgados/Sub-Enroladinhos_de_salsicha.html"><button>Saiba mais</button></a>
     </div>
   </div>
-  <div class="card">
+  <div class="card2">
     <img src="https://imagem.band.com.br/28/f_361228.jpg">
     <div>
       <h2>risoles de camarão</h2>
@@ -111,8 +557,8 @@
     </div>
   </div>
    </div>
-   <div id="sites2">
-    <div class="card">
+   <div id="sites22">
+    <div class="card2">
       <img src="https://www.receiteria.com.br/wp-content/uploads/salgado-assado-com-carne-moida-1-730x480.jpg">
       <div>
         <h2>Salgado assado com carne moida</h2>
@@ -121,7 +567,7 @@
         <a href="../HTML_Sub-Salgados/Sub-Salgado_de_carne-moida.html"><button>Saiba mais</button></a>
       </div>
     </div>
-    <div class="card">
+    <div class="card2">
       <img src="https://www.receiteria.com.br/wp-content/uploads/hamburgao-de-forno-capa-730x480.jpeg">
       <div>
         <h2>Hamburguer de forno</h2>
@@ -130,7 +576,7 @@
         <a href="../HTML_Sub-Salgados/Sub-Hamburguer_de_forno.html"><button>Saiba mais</button></a>
       </div>
     </div>
-    <div class="card">
+    <div class="card2">
       <img src="https://www.receiteria.com.br/wp-content/uploads/salgadinho-assado-de-queijo-01-730x480.jpg">
       <div>
         <h2>Salgadinho assado de quijo</h2>
@@ -140,7 +586,7 @@
       </div>
     </div>
   
-    <div class="card">
+    <div class="card2">
       <img src="https://www.receiteria.com.br/wp-content/uploads/salgadinho-de-massa-folhada-730x480.jpg">
       <div>
         <h2>Salgadinho de massa folhada</h2>

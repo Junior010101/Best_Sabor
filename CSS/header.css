@@ -146,12 +146,208 @@ div.pesquisa {
 div.pesquisa:hover {
     background-color: rgba(0, 0, 0, 0.466);
 }
-.dropdown1:hover {
+.drop:hover {
     background-color: rgba(0, 0, 0, 0.466);
+    padding-left: 50px;
+    padding-right: 50px;
 }
-div.dropdown1 {
+div.drop {
     display: flex;
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
+}
+dialog:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+dialog#popup, #popup2, #popup3, #popup4, #popup5{
+    position: absolute;
+    margin-top: 40px;
+    z-index: 2;
+    margin-left: 0px;
+    border: 0;
+    width: 570px;
+    height: 340px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 8px solid #c4c4c4;
+    background-color: rgba(42, 42, 77, 0.89);
+    overflow: hidden;
+}
+/*----------------*/
+.card {
+    background-color: #fff;
+    width: 200px;
+    height: 300px;
+    margin-left: 31px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    margin-right: 30px;
+    border: 10px ;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 4px 4px 12px #aaaa;
+}
+.card img {
+    width: 100%;
+    height: 130px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 50%;
+}
+.card h2 {
+    font-size: 1.2rem;
+}
+.card h3 {
+    font-size: 2.2 rem;
+    color: #aaaa;
+}
+.card button {
+    background-color: #6721ff63;
+    height: 30px;
+    border: none;
+    padding: 4px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.card button:hover {
+    background-color: #5001a0;
+    cursor: pointer;
+}
+.flaxs, .flaxs2, .flaxs3, .flaxs4, .flaxs5{
+    display: flex;
+}
+button#bubu, .bubu2, #bubu3, #bubu4{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    left: 577px;
+    top: 330px;
+    border-radius: 25px 25px 25px 25px;
+}
+button#inversobubu, .inversobubu2, #inversobubu3, #inversobubu4{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    left: 577px;
+    top: 260px;
+    border-radius: 25px 25px 25px 25px;
+}
+#bubu:focus, #inversobubu:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+#nobru1, #nobru2, #nobru3, #nobru4{
+    position: absolute;
+    visibility: hidden;
+}
+#nobro1, #nobro2, #nobro3, #nobro4{
+    position: absolute;
+    visibility: hidden;
+}
+#nobra1, #nobra2, #nobra3, #nobra4{
+    position: absolute;
+    visibility: hidden;
+}
+#nobrs1, #nobrs2, #nobrs3, #nobrs4{
+    position: absolute;
+    visibility: hidden;
+}
+#nobrr1, #nobrr2, #nobrr3, #nobrr4{
+    position: absolute;
+    visibility: hidden;
+}
+#nobru1:checked ~ .flaxs{
+    margin-top: 0;
+}
+#nobru1:checked ~ #inversobubu{
+    visibility: hidden;
+}
+#nobru2:checked ~ .flaxs{
+    margin-top: -65%;
+}
+#nobru3:checked ~ .flaxs{
+    margin-top: -130%;
+}
+#nobru4:checked ~ .flaxs{
+    margin-top: -195%;
+}
+/*------------------------------*/
+#nobro1:checked ~ .flaxs2{
+    margin-top: 0;
+}
+#nobro1:checked ~ #voltar2{
+    visibility: hidden;
+}
+#nobro2:checked ~ .flaxs2{
+    margin-top: -65%;
+}
+#nobro3:checked ~ .flaxs2{
+    margin-top: -130%;
+}
+#nobro4:checked ~ .flaxs2{
+    margin-top: -195%;
+}
+/*-----------------------------*/
+#nobra1:checked ~ .flaxs3{
+    margin-top: 0;
+}
+#nobra1:checked ~ #voltar3{
+    visibility: hidden;
+}
+#nobra2:checked ~ .flaxs3{
+    margin-top: -65%;
+}
+#nobra3:checked ~ .flaxs3{
+    margin-top: -130%;
+}
+#nobra4:checked ~ .flaxs3{
+    margin-top: -195%;
+}
+/*-----------------------------*/
+#nobrs1:checked ~ .flaxs4{
+    margin-top: 0;
+}
+#nobrs1:checked ~ #voltar4{
+    visibility: hidden;
+}
+#nobrs2:checked ~ .flaxs4{
+    margin-top: -65%;
+}
+#nobrs3:checked ~ .flaxs4{
+    margin-top: -130%;
+}
+#nobrs4:checked ~ .flaxs4{
+    margin-top: -195%;
+}
+/*-----------------------------*/
+#nobrr1:checked ~ .flaxs5{
+    margin-top: 0;
+}
+#nobrr1:checked ~ #voltar5{
+    visibility: hidden;
+}
+#nobrr2:checked ~ .flaxs5{
+    margin-top: -65%;
+}
+#nobrr3:checked ~ .flaxs5{
+    margin-top: -130%;
+}
+#nobrr4:checked ~ .flaxs5{
+    margin-top: -195%;
 }

@@ -176,6 +176,9 @@ dialog{
     width: 1200px;
     height: 600px;
 }
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.493);
+}
 .carregando{
     background-color: rgb(221, 221, 221);
     width: 1232px;
